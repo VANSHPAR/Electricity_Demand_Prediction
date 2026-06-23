@@ -1,9 +1,9 @@
 import streamlit as st
-import pickle
+import joblib
 import datetime
 import pandas as pd
 
-model=pickle.load(open('electricity_prediction_model_copy.pkl','rb'))
+model=joblib.load('electricity_prediction_model_copy.pkl')
 
 
 
